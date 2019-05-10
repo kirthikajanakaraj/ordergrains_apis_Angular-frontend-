@@ -1,0 +1,85 @@
+
+
+<body>
+<div class="container">
+	<br><p class="text-center">Order Organic seeds---><a href="http://localhost:4200/seedcatlog">More Products</a></p>
+<hr>
+
+	
+<div class="card">
+	<div class="row">
+		<aside class="col-sm-5 border-right">
+<article class="gallery-wrap"> 
+<div class="img-big-wrap">
+  <div> <a href="#"><img src="../../assets/{{details.pic}}"style="width:100%;heigth:100%;"></a></div>
+</div> 
+<div class="img-small-wrap">
+  <div class="item-gallery"> <img src="../../assets/a.jpg"> </div>
+  <div class="item-gallery"> <img src="../../assets/a1.jpg"> </div>
+  <div class="item-gallery"> <img src="../../assets/a2.jpg"> </div>
+  <div class="item-gallery"> <img src="../../assets/a3.jpg"> </div>
+</div> 
+</article> 
+		</aside>
+		<aside class="col-sm-7">
+<article class="card-body p-5">
+	<h3 class="title mb-3"></h3>
+
+<p class="price-detail-wrap"> 
+	<span class="price h3 text-warning"> 
+		<span class="currency">{{details.pname}}&emsp;--</span><span class="num">&emsp;{{details.price}}</span>
+	</span> 
+	<span>/per kg</span> 
+</p> 
+<dl class="item-property">
+  <dt>Description</dt>
+  <dd><p>{{details.specification}}</p></dd>
+</dl>
+<dl class="param param-feature">
+  <dt>Quality</dt>
+  <dd>1</dd>
+</dl>  
+<dl class="param param-feature">
+  <dt>Color</dt>
+  <dd>Black and white</dd>
+</dl>  
+<dl class="param param-feature">
+  <dt>Delivery</dt>
+  <dd>TN,AP,Karnataka</dd>
+</dl> 
+
+<hr>
+	<div class="row">
+		<div class="col-sm-5">
+			<dl class="param param-inline">
+			  <dt>Quantity: </dt>
+			  <dd>
+			  	<select class="form-control form-control-sm" style="width:70px;">
+			  		<option> 1 </option>
+			  		<option> 2 </option>
+			  		<option> 3 </option>
+			  	</select>
+			  </dd>
+			</dl>  
+		</div> 
+		<div class="col-sm-7">
+			<dl class="param param-inline">
+				  
+			</dl>  
+		</div> 
+	</div> 
+	<hr>
+	<a routerLink="/add" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>&emsp;
+	<a routerLink="/add" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
+</article> 
+		</aside> 
+	</div> 
+</div> 
+
+</div>
+<!--container.//-->
+
+
+<br><br><br>
+
+</body>

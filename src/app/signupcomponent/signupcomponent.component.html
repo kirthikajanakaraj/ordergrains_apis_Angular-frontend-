@@ -1,0 +1,41 @@
+<body>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sign Up</h5>
+              <form class="form-signin" #signup="ngForm"  (ngSubmit)="emailsubmitsignup(signup.value)">
+                <div class="form-label-group">
+                  <input type="username" id="inputEmail" class="form-control" placeholder="UserName" name="username" ngModel required autofocus>
+                  <label for="inputEmail" style="margin-left: 5%">username</label>
+                </div>
+  
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" ngModel required>
+                  <label for="inputPassword" style="margin-left: 5%">password</label>
+                </div>
+
+                
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="EmailAddress" name="email" ngModel required autofocus>
+                  <label for="inputEmail" style="margin-left: 5%">email</label>
+                </div>
+                
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="PhoneNumber" name="phone" ngModel required autofocus>
+                  <label for="inputEmail" style="margin-left: 5%">phone </label>
+                </div>
+  
+  
+              
+                
+                <hr class="my-4">
+                <button routerLink="/sucess" class="btn btn-lg btn-primary btn-block text-light" type="submit" style="font-size:15px;">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
